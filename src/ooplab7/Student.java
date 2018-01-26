@@ -1,18 +1,16 @@
 package ooplab7;
-//talking about Student?
-// 1.Student ID
-// 2.Name
-// 3.person ID
-// 4.Address
-// Access Control
-// 1. public
-// 2. private
-// 3. protected
+//talking about student
+//1.Student ID
+//2.Name
+//3.Peron ID
+//4.Address
+//Access Control
+//1.public
+//2.private
+//3.protected
 
-
-
-
-public class Student{
+public class Student {
+    public static int age;
     //properties of Student class
     public String group;
     private String id;
@@ -20,19 +18,17 @@ public class Student{
     private String pid;
     private String address;
     //Constructor
-    //default Constructor
+    //default constructor
     public Student(){}
     //create by own
-    public Student(String id, String n,String pid, String a){
+    public Student (String id,String name,String pid,String a){
         //assign data to class properties
-
-        this.name = n;
+        this.id = id;
+        this.name = name;
         this.pid = pid;
-        this.address = a;
+        this.address = address;
     }
     //getter and setter methods
-
-
 
     public String toString() {
         return "Student{" +
@@ -44,28 +40,34 @@ public class Student{
     }
 
     public String getId() {
-        return this.id;
+        return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
+
     public String getName() {
-        return this.name;
+        return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getPid() {
-        return this.pid;
+        return pid;
     }
+
     public void setPid(String pid) {
-        this.id = pid;
+        this.pid = pid;
     }
+
     public String getAddress() {
-        return this.address;
+        return address;
     }
+
     public void setAddress(String address) {
         this.address = address;
     }
-
 }//class
