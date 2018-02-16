@@ -6,11 +6,11 @@ public class myArrayList {
     public static void main(String[] args) {
 //        ArrayList
         ArrayList list = new ArrayList();
-        String name = "NOK";
+        String name = "Tik";
         list.add(name);
         System.out.println(list);
-        list.add("B");
-        list.add("DA");
+        list.add("Bew");
+        list.add("Rin");
         System.out.println(list);
         list.add(2,"ADAM");
         System.out.println(list);
@@ -18,7 +18,7 @@ public class myArrayList {
         System.out.println(list);
         list.add(10.10);
         System.out.println(list);
-        list.remove("B");
+        list.remove("Rin");
         System.out.println(list);
         list.remove(3);
         System.out.println(list);
