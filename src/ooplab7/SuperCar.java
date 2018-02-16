@@ -1,56 +1,60 @@
-package ooplab7;
-
+package oop_lab7;
+//1.car brand ยี่ห้อ
+//2.car color สี
+//3.car engine size ขนาดของเครื่องยนต์
+//4.max speed ความเร็วสูงสุดของเครื่อง
+//5.country of origin
 public class SuperCar {
-
-    private String brand;
-    private String color;
-    private String enginesize;
+    //properties of Supercar
+    private String carbrand ;
+    private String carcolor;
+    private String carenginesize;
     private String maxspeed;
-    private String country;
+    private String countryoforigin;
 
     public SuperCar(){}
+    public SuperCar (String brand, String color, String size, String speed, String origin){
+        this.carbrand = brand;
+        this.carcolor = color;
+        this.carenginesize = size;
+        this.maxspeed = speed;
+        this.countryoforigin = origin;
 
-    public SuperCar(String b, String cl, String e,String m,String c){
-        this.brand = b;
-        this.color = cl;
-        this.enginesize = e;
-        this.maxspeed = m;
-        this.country = c;
     }
 
     @Override
     public String toString() {
         return "SuperCar{" +
-                "brand='" + brand + '\'' +
-                ", color='" + color + '\'' +
-                ", enginesize='" + enginesize + '\'' +
+                "carbrand='" + carbrand + '\'' +
+                ", carcolor='" + carcolor + '\'' +
+                ", carenginesize='" + carenginesize + '\'' +
                 ", maxspeed='" + maxspeed + '\'' +
-                ", country='" + country + '\'' +
+                ", countryoforigin='" + countryoforigin + '\'' +
                 '}';
     }
 
-    public String getBrand() {
-        return brand;
+    public String getCarbrand() {
+        return carbrand;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setCarbrand(String carbrand) {
+        this.carbrand = carbrand;
     }
 
-    public String getColor() {
-        return color;
+    public String getCarcolor() {
+        return carcolor;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setCarcolor(String carcolor) {
+        this.carcolor = carcolor;
     }
 
-    public String getEnginesize() {
-        return enginesize;
+    public String getCarenginesize() {
+        return carenginesize;
     }
 
-    public void setEnginesize(String enginesize) {
-        this.enginesize = enginesize;
+    public void setCarenginesize(String carenginesize) {
+        this.carenginesize = carenginesize;
     }
 
     public String getMaxspeed() {
@@ -61,11 +65,15 @@ public class SuperCar {
         this.maxspeed = maxspeed;
     }
 
-    public String getCountry() {
-        return country;
+    public String getCountryoforigin() {
+        return countryoforigin;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setCountryoforigin(String countryoforigin) {
+        this.countryoforigin = countryoforigin;
     }
-} //class
+    public String getSuperCarInfo(){
+        return getSuperCarInfo ();
+    }
+
+}//class
